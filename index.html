@@ -1,5 +1,6 @@
 <style>
 #popup{
+	display: none;
 	position: absolute;
     text-align: center;
     background:white;
@@ -20,7 +21,7 @@ float:right;
 }
 
 .popup_content {
-	/*float: left;*/
+	float: left;
 	font-size: 20px;
 	padding: 10px 0;
 }
@@ -33,6 +34,9 @@ float:right;
 	padding: 10px 0;
 }
 </style>
+<script>
+	setTimeout(function() { document.getElementById('popup').style.display='block'; }, 1000);
+</script>
 <div id="popup">
 	<a href="#" onclick="document.getElementById('popup').style.display='none';return false;" id="close_popup"></a>
 	<div class='popup_content'>
