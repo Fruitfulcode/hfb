@@ -1,0 +1,44 @@
+<style>
+#popup{
+	position: absolute;
+    text-align: center;
+    background:white;
+    border: 2px solid black;
+    width:550px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#close_popup{
+display:block;
+width:24px;
+height:24px;
+margin: 5px 5px 0 0;
+background:url('window-close.png');
+float:right;
+}
+
+.popup_content {
+	float: left;
+	font-size: 20px;
+	padding: 10px 0;
+}
+.popup_content img {
+	margin: 0 auto 15px;
+	width: 50%;
+}
+.popup_content .signup_popup {
+	padding: 10px 0;
+}
+</style>
+
+<div id="popup">
+	<a href="#" onclick="document.getElementById('popup').style.display='none';return false;" id="close_popup"></a>
+	<div class='popup_content'>
+	    <img src="thumbnail.jpg">
+		<p>Our website is under virtual construction.</p>
+		<p>Behind the scenes we are working hard <br>on a shiny, bright and new <br> online office.</p>
+		<p class="signup_popup">Sign in to our newsletter <br>below for the result.</p>
+	</div>
+</div>
